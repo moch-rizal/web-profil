@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            padding: 5px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .skills {
+            margin: 2rem 0;
+        }
+
+        .skills-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            background: #e9ecef;
+        }
+
+        .contact {
+            margin-top: 2rem;
+        }
+
+        .contact-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .contact-item {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .profile-card {
+                padding: 2rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- Profile Image -->
+            <img src="img/arif.jpg" alt="Profile Picture" class="profile-image">
+
+            <!-- Name -->
+            <h1 class="name">Moch. Arif Samsul Rizal</h1>
+
+            <!-- Description -->
+            <p class="description">
+                Seseorang yang tertarik di bidang web development. ingin menguasai baik front-end maupun back-end . saat ini sedang mengikuti program MSIB di Bangkit dengan Learning Path Cloud Computing.
+            </p>
+
+            <!-- Social Media Icons -->
+            <div class="social-links">
+                <a href="#"><img src="img/github.png" alt="GitHub" class="social-icon"></a>
+                <a href="#"><img src="img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                <a href="#"><img src="img/whatsapp.png" alt="Whatsapp" class="social-icon"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h2 class="skills-title">Kemampuan Teknis</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Figma</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">Google Cloud</div>
+                    <div class="skill-item">Firebase</div>
+                    <div class="skill-item">Hapi</div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact">
+                <h2 class="contact-title">Kontak</h2>
+                <div class="contact-info">
+                    <a href="mailto:john@example.com" class="contact-item">📧 mochrizal1616@gmail.com</a>
+                    <a href="tel:+6281234567890" class="contact-item">📱 +62 896-868-09-843</a>
+                    <a href="#" class="contact-item">📍 Surabaya, Indonesia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
